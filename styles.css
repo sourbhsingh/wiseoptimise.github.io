@@ -1,0 +1,214 @@
+/* CSS styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d4d4d4;
+    
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-right:  1.8em;;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.logo h1 {
+    font-size: 44px;
+    margin: 0;
+    text-align: center;
+    color: #2a73ab;
+}
+
+.slogan {
+    font-size: 20px;
+    margin: 0;
+    margin-inline-start: 3em;
+    text-align: center;
+    color: #d4d4d4;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 5px;
+    border-color: #fff;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 5em;
+    margin-bottom: auto;
+    margin-inline-end: 5em;
+    border-color: #fff;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav li a:hover {
+    color: #2a73ab;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.form input,
+.form textarea {
+    width: 300px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.confirmation {
+    color: green;
+    font-weight: bold;
+    display: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* ... Previous styles ... */
+
+.developer-info {
+    margin-top: 30px;
+    font-size: 30px;
+    background-color: #d4d4d4;
+}
+.developer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.developer-card {
+    display: flex;
+    justify-content: center;
+}
+
+.developer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 10px;
+}
+
+.developer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.developer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.developer p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    flex-shrink: 0;
+  }
+  .social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  /* ... Previous styles ... */
+
+.social-links a {
+    display: inline-block;
+    margin-right: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #777;
+}
+
+.social-links a:hover::after {
+    content: attr(data-hover-text);
+    color: #777;
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ... Remaining styles ... */

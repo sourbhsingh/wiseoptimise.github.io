@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <img src="logo.png" alt="App Logo">
+                <div class="logo-text">
+                    <h1>Wise Optimise</h1>
+                    <p class="slogan">"Maximize Battery Life, Optimize Performance - WiseOptimise Battery Saver"</p>
+                </div>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h1>Contact Us</h1>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form">
+                    <label for="message">Message:</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <div class="form">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <p class="confirmation" id="confirmationMessage">Thank you for your message!</p>
+        </section>
+    </main>
+  
+    
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 Wise Optimise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
