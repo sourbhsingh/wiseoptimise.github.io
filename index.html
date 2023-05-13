@@ -1,26 +1,66 @@
-function submitForm(event) {
-    event.preventDefault();
-
-    // Get the form values
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    // You can implement your form submission logic here
-    // For example, you can use AJAX to send the form data to a backend server
-
-    // Display the confirmation message with a tick
-    var confirmationMessage = document.getElementById("confirmationMessage");
-    confirmationMessage.innerHTML = "&#10004; Thank you for your response!";
-    confirmationMessage.style.display = "block";
-
-    // Clear the form fields
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-
-    // Hide the confirmation message after 3 seconds
-    setTimeout(function() {
-        confirmationMessage.style.display = "none";
-    }, 3000);
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="App Logo">
+            <div class="logo-text">
+                <h1>Wise Optimise</h1>
+                <p class="slogan">"Maximize Battery Life, Optimize Performance - WiseOptimise Battery Saver"</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="privacy-policy">
+                <h2>Your Privacy is Important to Us</h2>
+                <p>At Wise Optimise, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard the data you provide when using our Battery Saver App.</p>
+                <h3>Information We Collect</h3>
+                <p>When you install and use the Wise Optimise Battery Saver App, we may collect certain information from your device, such as:</p>
+                <ul>
+                    <li>Device information (e.g., device model, operating system version)</li>
+                    <li>Battery usage statistics</li>
+                    <li>App usage statistics</li>
+                    <li>Other diagnostic information</li>
+                </ul>
+                <h3>How We Use Your Information</h3>
+                <p>The information we collect is used to:</p>
+                <ul>
+                    <li>Optimize your device's battery performance</li>
+                    <li>Improve our app's functionality and features</li>
+                    <li>Analyze usage patterns and trends</li>
+                    <li>Provide personalized recommendations</li>
+                </ul>
+                <h3>Third-Party Permissions</h3>
+                <p>In order to deliver the best experience and optimize your device's battery, the Wise Optimise Battery Saver App may require certain permissions, including:</p>
+                <ul>
+                    <li>Battery usage information</li>
+                    <li>App usage information</li>
+                    <li>Notification access</li>
+                </ul>
+                <h3>Data Security</h3>
+                <p>We prioritize the security of your personal information and employ industry-standard measures to protect it against unauthorized access, disclosure, or alteration.</p>
+                <h3>Updates to this Privacy Policy</h3>
+                <p>We may periodically update this Privacy Policy to reflect any changes in our practices. We encourage you to review this page regularly for any updates.</p>
+                <h3>Contact Us</h3>
+                <p>If you have any questions or concerns regarding our Privacy Policy or the Wise Optimise Battery Saver App, please contact us at <a href="mailto:privacy@wiseoptimise.com">privacy@wiseoptimise.com</a>.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 Wise Optimise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
