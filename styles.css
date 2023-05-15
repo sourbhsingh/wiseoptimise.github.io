@@ -133,13 +133,61 @@ p {
 }
 /* ... Previous styles ... */
 /* ... Previous styles ... */
-
+.developer {
+    width: 350px;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .developer {
+      width: 70%;
+      padding: 30px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .developer {
+      width: 53.33%;
+      padding: 20px;
+    }
+  }
+  .developer .social-links img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  @media (max-width: 767px) {
+    .developer .social-links img {
+      width: 60x;
+      height: 60px;
+    }
+  }
+  
+  
 .developer-card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Allow the developer cards to wrap to the next line */
 }
 
+@media (max-width: 767px) {
+    .developer h2 {
+      font-size: 30px; /* Increase the font size for the developer's name on mobile */
+    }
+  
+    .developer h3 {
+      font-size: 28px; /* Increase the font size for the developer's role on mobile */
+    }
+  
+    .developer p {
+      font-size: 26px; /* Increase the font size for the developer's contact information on mobile */
+    }
+  }
+/* 
 .developer {
     background-color: #fff;
     padding: 30px;
@@ -148,7 +196,7 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     width: 350px;
     margin: 20px;
-}
+} */
 
 .developer:hover {
     transform: scale(1.07); /* Increase the size of the card on hover */
@@ -172,16 +220,9 @@ p {
 }
 
 .social-links img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-right: 20px;
-}
-
-/* Increase the size of the developer cards on larger screens */
-@media (min-width: 768px) {
-    .developer {
-        width: 400px;
-    }
 }
 
 
