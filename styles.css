@@ -135,17 +135,14 @@ p {
 
 .developer-info {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 24px; /* Reduce the font size for a better fit */
     background-color: #d4d4d4;
-}
-.developer:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .developer-card {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow the developer cards to wrap to the next line */
 }
 
 .developer {
@@ -172,6 +169,13 @@ p {
     font-size: 16px;
     color: #666;
     margin-bottom: 15px;
+}
+
+/* Increase the size of the developer cards on larger screens */
+@media (min-width: 768px) {
+    .developer {
+        width: 400px;
+    }
 }
 
 
