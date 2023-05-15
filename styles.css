@@ -132,12 +132,7 @@ p {
     margin-top: 10px;
 }
 /* ... Previous styles ... */
-
-.developer-info {
-    margin-top: 30px;
-    font-size: 24px; /* Reduce the font size for a better fit */
-    background-color: #d4d4d4;
-}
+/* ... Previous styles ... */
 
 .developer-card {
     display: flex;
@@ -147,16 +142,21 @@ p {
 
 .developer {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 30px;
+    border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    width: 300px;
-    margin: 10px;
+    width: 350px;
+    margin: 20px;
+}
+
+.developer:hover {
+    transform: scale(1.07); /* Increase the size of the card on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .developer h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
@@ -169,6 +169,12 @@ p {
     font-size: 16px;
     color: #666;
     margin-bottom: 15px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
 }
 
 /* Increase the size of the developer cards on larger screens */
@@ -216,3 +222,53 @@ footer {
 }
 
 /* ... Remaining styles ... */
+/* CSS styles */
+
+/* ... Previous styles ... */
+
+/* Adjustments for mobile devices */
+
+@media (max-width: 767px) {
+    .logo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+  
+    .logo-text {
+      margin: 0;
+      text-align: center;
+    }
+  
+    .slogan {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  
+    nav ul {
+      margin: 10px 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .developer-card {
+      width: 100%;
+    }
+  
+    .developer {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  /* ... Remaining styles ... */
+  
